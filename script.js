@@ -54,3 +54,33 @@ function swipper(){
 
 swipper()
 
+var t1 = gsap.timeline()
+
+t1.from("#loader h3", {
+    x: 40,
+    opacity: 0,
+    duration: 1,
+    // ease: "power4.out",
+    stagger: 0.1,
+})
+t1.to("#loader h3", {
+    x: -40,
+    opacity: 0,
+    duration: 1,
+    // ease: "power4.out",
+    stagger: -0.1,
+})
+t1.to("#loader", {
+    opacity:0,
+})
+t1.from("#page1-content span", {
+    y: 100,
+    opacity: 0,
+    duration: 0.5,
+    // ease: "power4.out",
+    stagger: 0.1,
+    delay: -0.5
+})
+t1.to("#loader", {
+    display:"none"
+})
