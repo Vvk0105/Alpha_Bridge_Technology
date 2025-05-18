@@ -221,12 +221,12 @@ nav h4{
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #000;
+    background-color: #d1cdcd;
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000000;
     gap: 10px;
 }
 
